@@ -1,11 +1,8 @@
 # Capacitor Fancy Notifications
 
-[![npm](https://img.shields.io/npm/v/fancy-notifications.svg)](https://www.npmjs.com/package/fancy-notifications)
-[![npm](https://img.shields.io/npm/dt/fancy-notifications.svg?label=npm%20downloads)](https://www.npmjs.com/package/fancy-notifications)
-
 ## Installation
 
-- `npm i fancy-notifications`
+- `npm i vadimrostok/fancy-notifications`
 
 ## Usage
 
@@ -27,8 +24,23 @@ async function updateBadgeCount() {
   }
 }
 
-
 ```
+
+### Android
+
+In your `MainActivity.java` add import
+
+```java
+com.github.triniwiz.capacitor.notifications.FancyNotifications;
+```
+
+and add 
+
+```java
+add(FancyNotifications.class);
+```
+
+to your plugins list in onCreate.
 
 ## Api
 
